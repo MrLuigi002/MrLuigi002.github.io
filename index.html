@@ -1,20 +1,153 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Portfolio Luis Garcia</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Final02.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body style="background-color:#191919;">
-    <div class="webgl-content" style=" width: 80%; margin: auto">
-      <div id="unityContainer" style="width: 100%; height: 100%; margin: auto"></div>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Luis García: Developer & Designer</title>
+
+        <style>
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body { background-color: #191919; }
+
+            #image {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 40px;
+                width: 85%;
+            }
+
+            .vertical-center {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+
+            .button {
+                background-color: #39B54A;
+                text-align: center;
+                font-weight: bold;
+                text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 4px 4px black;
+                color: white;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 6vw 20vw;
+                font-size: 6vw;
+                border-radius: 24px;
+                border: 3px solid black;
+                cursor: pointer;
+                box-shadow: 8px 8px black;
+                margin-top: 40px;
+
+                transition-duration: 0.2s;
+            }
+
+            .button:hover{
+                padding: 6.4vw 20.4vw;
+                font-size: 6.4vw;
+            }
+
+            @media only screen and (min-width: 600px) {
+                #image {
+                width: 60%;
+                }
+
+                .button{
+                    padding: 4vw 16vw;
+                    font-size: 4vw;                   
+                }
+
+                .button:hover{
+                padding: 4.4vw 16.4vw;
+                font-size: 4.1vw;
+                }
+            }
+
+            @media only screen and (min-width: 768px) {
+                #image {
+                width: 60%;
+                }
+
+                .button{
+                    padding: 4vw 12vw;
+                    font-size: 4vw;
+                }
+
+                .button:hover{
+                padding: 4.4vw 12.4vw;
+                font-size: 4.1vw;
+                }
+            }
+
+            @media only screen and (max-width: 1200px) and (orientation: landscape){
+
+                .col-1 {width: 50%;}
+                .col-2 {width: 50%;}
+  
+                #image {
+                width: 40%;
+                margin: 0%;
+                position: absolute;
+                top: 50%;
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                left: 5%;
+                }
+
+                .button{
+                    padding: 2.6vw 10vw;
+                    font-size: 3.8vw;  
+                    margin: 0%;
+                    position: absolute;
+                    top: 50%;
+                    -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    right: 5%;              
+                }
+
+                .button:hover{
+                padding: 3vw 10.4vw;
+                font-size: 3.9vw;
+                }
+            }
+
+            @media only screen and (min-width: 1200px) {
+                #image {
+                width: 33%;
+                }
+
+                .button{
+                    padding: 1.8vw 4.4vw;
+                    font-size: 2vw;
+                }
+
+                .button:hover{
+                    padding: 2.2vw 4.8vw;
+                    font-size: 2.1vw;
+                }
+            }
+            
+        </style>
+
+    </head>
+<body>
+    <div>
+        <header>
+            <div class="col-1"><img src="img/logo.png" id="image"></div>
+        </header>
+        <nav>
+            <div class="col-2">
+                <form>
+                <button class="button" formaction="/portfolio">Portfolio</button>
+                </form>
+            </div>
+        </nav>
     </div>
-  </body>
+</body>
 </html>
