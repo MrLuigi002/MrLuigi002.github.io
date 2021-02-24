@@ -4,6 +4,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Luis García: Developer & Designer</title>
 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet"> 
+
         <style>
 
             * {
@@ -11,6 +14,18 @@
             }
 
             body { background-color: #191919; }
+
+            footer{
+                color: white;
+                text-align: center;
+                padding: 10px;
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 18px;
+            }
 
             #image {
                 display: block;
@@ -74,6 +89,10 @@
                 width: 60%;
                 }
 
+                footer{
+                    font-size: 20px;
+                }
+
                 .button{
                     padding: 4vw 12vw;
                     font-size: 4vw;
@@ -85,7 +104,7 @@
                 }
             }
 
-            @media only screen and (max-width: 1200px) and (orientation: landscape){
+            @media only screen and (max-width: 1200px) and (orientation: landscape), only screen and (max-height: 535px) and (orientation: landscape){
 
                 .col-1 {width: 50%;}
                 .col-2 {width: 50%;}
@@ -122,6 +141,10 @@
                 width: 33%;
                 }
 
+                footer{
+                    font-size: 24px;
+                }
+
                 .button{
                     padding: 1.8vw 4.4vw;
                     font-size: 2vw;
@@ -149,5 +172,9 @@
             </div>
         </nav>
     </div>
+
+    <footer>
+        <p>info@luisg.dev</p>
+    </footer>
 </body>
 </html>
